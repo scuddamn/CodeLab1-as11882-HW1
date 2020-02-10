@@ -7,7 +7,7 @@ public class TimerScript : MonoBehaviour
 {
 
     float currentTime = 0f;
-    float startTime = 10f;
+    float startTime = 30f;
 
     public Text timerText;
     public Text winText;
@@ -34,12 +34,21 @@ public class TimerScript : MonoBehaviour
             {
                 winText.text = "Player 1 Wins!";
                 startOverButton.SetActive(true);
+                
             }
 
             if(ScoreCounter.P2scoreValue > ScoreCounter.P1scoreValue)
             {
                 winText.text = "Player 2 Wins!";
                 startOverButton.SetActive(true);
+                
+            }
+
+            if(ScoreCounter.P1scoreValue == ScoreCounter.P2scoreValue)
+            {
+                winText.text = "Players Tied!";
+                startOverButton.SetActive(true);
+                
             }
 
             

@@ -9,5 +9,7 @@ public class Restart : MonoBehaviour
     {
         //reload current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ScoreCounter.P1scoreValue = 0;
+        ScoreCounter.P2scoreValue = 0;
     }
 }
