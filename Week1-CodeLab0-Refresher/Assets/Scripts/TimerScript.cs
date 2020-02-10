@@ -7,7 +7,7 @@ public class TimerScript : MonoBehaviour
 {
 
     float currentTime = 0f;
-    float startTime = 30f;
+    float startTime = 40f;
 
     public Text timerText;
     public Text winText;
