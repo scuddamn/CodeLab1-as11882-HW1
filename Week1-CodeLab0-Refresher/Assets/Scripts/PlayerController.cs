@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hello, World!");
+        Debug.Log("You're doing great!");
 
         rb = GetComponent<Rigidbody2D>();
 
