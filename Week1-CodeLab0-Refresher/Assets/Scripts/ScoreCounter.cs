@@ -21,12 +21,15 @@ public class ScoreCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //probably not the best way to do this? i originally did it in 2 different scripts so this feels better than that at least
+        //display player 1 score
         if (gameObject.CompareTag("Player1"))
         {
 
             score.text = "Player 1 Score: " + P1scoreValue;
         }
 
+        //display player 2 score
         if (gameObject.CompareTag("Player2"))
         {
             score.text = "Player 2 Score: " + P2scoreValue;
